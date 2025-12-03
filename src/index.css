@@ -16,8 +16,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 42% 12%;
 
-    --primary: 221 83% 53%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 217 91% 48%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 220 16% 94%;
     --secondary-foreground: 222 42% 15%;
@@ -36,11 +36,11 @@
 
     --border: 223 13% 85%;
     --input: 223 13% 85%;
-    --ring: 221 83% 53%;
+    --ring: 217 91% 48%;
 
     --radius: 0.75rem;
 
-    --glow-blue: 221 83% 53%;
+    --glow-blue: 217 91% 48%;
     --glow-purple: 271 81% 56%;
     --glow-green: 142 71% 45%;
   }
