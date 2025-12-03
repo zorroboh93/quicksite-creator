@@ -1,0 +1,30 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zorro Web Studio - Siti vetrina moderni e veloci">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0B1224" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="200" cy="120" r="220" fill="#60A5FA" opacity="0.14" />
+  <circle cx="1050" cy="520" r="220" fill="#A855F7" opacity="0.18" />
+  <rect x="80" y="170" width="1040" height="290" rx="28" fill="rgba(15,23,42,0.65)" stroke="rgba(255,255,255,0.08)" />
+  <text x="120" y="250" fill="#8BA0C2" font-family="'Poppins', 'Inter', system-ui" font-size="32" letter-spacing="1">
+    Zorro Web Studio · Landing page professionale
+  </text>
+  <text x="120" y="320" fill="white" font-family="'Poppins', 'Inter', system-ui" font-size="56" font-weight="700">
+    Siti vetrina moderni, veloci e ottimizzati mobile
+  </text>
+  <text x="120" y="380" fill="#B8C5E3" font-family="'Poppins', 'Inter', system-ui" font-size="28">
+    Prezzo lancio 180€ · Posti limitati · Contatto rapido WhatsApp
+  </text>
+  <rect x="120" y="430" width="320" height="70" rx="18" fill="url(#accent)" />
+  <text x="160" y="476" fill="white" font-family="'Poppins', 'Inter', system-ui" font-size="28" font-weight="600">
+    Inizia il tuo sito ora
+  </text>
+</svg>
