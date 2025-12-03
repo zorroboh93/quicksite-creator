@@ -81,7 +81,7 @@ const Index = () => {
               <span className="text-primary">180€</span>
             </h1>
             
-            <p className="text-muted-foreground mb-6 max-w-lg">
+            <p className="text-foreground/80 mb-6 max-w-lg leading-relaxed">
               Creo <strong className="text-foreground">siti vetrina su misura</strong>: moderni, veloci e perfetti su ogni dispositivo. 
               Design curato che fa la differenza per la tua attività.
             </p>
@@ -98,7 +98,7 @@ const Index = () => {
             </div>
 
             {/* Credibility element */}
-            <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+            <div className="flex flex-wrap gap-4 text-sm text-foreground/70">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-success animate-pulse" />
                 <span>Risposta entro 24h</span>
@@ -244,72 +244,90 @@ const Index = () => {
 
         {/* Contatti */}
         <section id="contatti" className="animate-fade-in-up [animation-delay:300ms]">
-          <div className="mb-8">
-            <span className="text-xs uppercase tracking-wider text-muted-foreground">Parliamone</span>
-            <h2 className="text-2xl font-bold mt-1">Iniziamo il tuo progetto</h2>
-            <p className="text-sm text-muted-foreground mt-2 max-w-lg">
-              Scrivimi su WhatsApp per una risposta veloce, oppure compila il form.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="text-sm text-muted-foreground">
-              <p className="mb-4">
-                <strong className="text-foreground">WhatsApp</strong> è il modo più veloce: ti rispondo di solito entro qualche ora.
-              </p>
-              
-              <Button asChild className="mb-6 glow-shadow">
-                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-4 h-4 mr-2" /> Scrivimi su WhatsApp
-                </a>
-              </Button>
-
-              <p>
-                Non hai ancora testi o immagini? Nessun problema, posso aiutarti a impostare tutto.
-              </p>
-              
-              <div className="flex items-center gap-2 mt-4 text-xs">
-                <Clock className="w-4 h-4 text-primary" />
-                <span>Risposta garantita entro 24 ore</span>
-              </div>
+          <div className="card-gradient rounded-2xl p-6 md:p-8 border border-border/50">
+            <div className="text-center mb-8">
+              <span className="text-xs uppercase tracking-wider text-primary font-medium">Parliamone</span>
+              <h2 className="text-2xl font-bold mt-2">Iniziamo il tuo progetto</h2>
             </div>
 
-            <form onSubmit={handleSubmit} className="card-gradient rounded-xl p-5 border border-border/50">
-              <div className="space-y-4">
-                <div>
-                  <label className="text-sm mb-1 block">Nome</label>
-                  <Input 
-                    placeholder="Come ti chiami?" 
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  />
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              {/* WhatsApp - Opzione principale */}
+              <div className="bg-secondary/30 rounded-xl p-5 border border-border/50">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-full bg-success/20 border border-success/50 flex items-center justify-center">
+                    <MessageCircle className="w-5 h-5 text-success" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">WhatsApp</h3>
+                    <p className="text-xs text-foreground/70">Risposta più veloce</p>
+                  </div>
                 </div>
-                <div>
-                  <label className="text-sm mb-1 block">Email</label>
-                  <Input 
-                    type="email" 
-                    placeholder="Dove posso risponderti?" 
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  />
-                </div>
-                <div>
-                  <label className="text-sm mb-1 block">Messaggio</label>
-                  <Textarea 
-                    placeholder="Raccontami della tua attività..." 
-                    rows={3}
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  />
-                </div>
-                <div className="flex items-center justify-between gap-4">
-                  <Button type="submit" disabled={isSubmitting}>
-                    <Send className="w-4 h-4 mr-2" /> Invia
-                  </Button>
-                  <p className="text-xs text-muted-foreground">Niente spam, promesso.</p>
+                
+                <p className="text-sm text-foreground/80 mb-4">
+                  Ti rispondo di solito entro qualche ora. È il modo migliore per iniziare.
+                </p>
+                
+                <Button asChild className="w-full glow-shadow mb-4">
+                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-4 h-4 mr-2" /> Scrivimi su WhatsApp
+                  </a>
+                </Button>
+
+                <div className="flex items-center gap-2 text-xs text-foreground/60">
+                  <Clock className="w-3.5 h-3.5 text-primary" />
+                  <span>Risposta garantita entro 24h</span>
                 </div>
               </div>
-            </form>
+
+              {/* Form email */}
+              <form onSubmit={handleSubmit} className="bg-secondary/30 rounded-xl p-5 border border-border/50">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-full bg-primary/20 border border-primary/50 flex items-center justify-center">
+                    <Send className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">Email</h3>
+                    <p className="text-xs text-foreground/70">Preferisci scrivere?</p>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div>
+                    <label className="text-sm text-foreground/90 mb-1 block">Nome</label>
+                    <Input 
+                      placeholder="Come ti chiami?" 
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm text-foreground/90 mb-1 block">Email</label>
+                    <Input 
+                      type="email" 
+                      placeholder="Dove posso risponderti?" 
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm text-foreground/90 mb-1 block">Messaggio</label>
+                    <Textarea 
+                      placeholder="Raccontami della tua attività..." 
+                      rows={3}
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    />
+                  </div>
+                  <Button type="submit" disabled={isSubmitting} className="w-full">
+                    <Send className="w-4 h-4 mr-2" /> Invia richiesta
+                  </Button>
+                </div>
+              </form>
+            </div>
+
+            <p className="text-center text-xs text-foreground/50 mt-6">
+              Non hai ancora testi o immagini? Nessun problema, ti aiuto io.
+            </p>
           </div>
         </section>
       </main>
