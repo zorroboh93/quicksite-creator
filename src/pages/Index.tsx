@@ -22,8 +22,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
 const WHATSAPP_NUMBER = "393401234567";
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=Ciao%20Zorro%2C%20vorrei%20un%20sito%20vetrina%20per%20la%20mia%20attivit%C3%A0`;
-const EMAIL = "ciao@zorrostudio.it";
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=Ciao%20pixelboh%2C%20vorrei%20un%20sito%20vetrina%20per%20la%20mia%20attivit%C3%A0`;
+const EMAIL = "ciao@pixelboh.it";
 
 const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID ?? "";
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID ?? "";
@@ -228,7 +228,7 @@ const Index = () => {
               Z
             </div>
             <div>
-              <div className="font-semibold text-sm sm:text-base">Zorro Web Studio</div>
+              <div className="font-semibold text-sm sm:text-base">pixelboh</div>
               <div className="text-xs text-muted-foreground">Siti vetrina professionali</div>
             </div>
           </div>
@@ -775,7 +775,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border mt-12 py-6">
         <div className="container flex flex-wrap items-center justify-between gap-4 text-xs text-muted-foreground">
-          <span>© {new Date().getFullYear()} Zorro Web Studio – Siti vetrina a 180€</span>
+          <span>© {new Date().getFullYear()} pixelboh – Siti vetrina a 180€</span>
           <nav aria-label="Link legali e contatti" className="flex flex-wrap gap-4">
             <a href={`mailto:${EMAIL}`} className="hover:text-foreground transition-colors">
               {EMAIL}
