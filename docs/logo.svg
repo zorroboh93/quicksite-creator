@@ -1,21 +1,22 @@
-<svg viewBox="0 0 768 768" xmlns="http://www.w3.org/2000/svg">
-  <rect width="768" height="768" fill="#e8e8e8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Sfondo grigio -->
+  <rect width="1024" height="1024" fill="#e8e8e8"/>
   
-  <!-- Cerchio sfumato blu-arancione -->
+  <!-- Cerchio esterno con gradiente blu-arancione -->
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1f3fb8;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#7b3fb8;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#ff5722;stop-opacity:1" />
+    <linearGradient id="circleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f3fb8;stop-opacity:1"/>
+      <stop offset="30%" style="stop-color:#6b3fb8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ff5722;stop-opacity:1"/>
     </linearGradient>
   </defs>
   
-  <!-- Cerchio esterno con gradiente -->
-  <circle cx="384" cy="310" r="140" fill="none" stroke="url(#grad1)" stroke-width="50"/>
+  <!-- Cerchio principale -->
+  <circle cx="512" cy="512" r="280" fill="none" stroke="url(#circleGrad)" stroke-width="80"/>
   
-  <!-- Rettangolo rosso/arancione (parte destra) -->
-  <rect x="345" y="285" width="135" height="145" fill="#ff5722"/>
+  <!-- Rettangolo bianco dentro il cerchio (parte destra) -->
+  <rect x="450" y="450" width="220" height="220" fill="white"/>
   
-  <!-- Testo "BOH" -->
-  <text x="384" y="580" font-family="Arial, sans-serif" font-size="140" font-weight="bold" text-anchor="middle" fill="#0a1a3a" letter-spacing="15">BOH</text>
+  <!-- Testo BOH sotto -->
+  <text x="512" y="850" font-family="Arial, Helvetica, sans-serif" font-size="280" font-weight="bold" text-anchor="middle" fill="#1a2a4a" letter-spacing="30">BOH</text>
 </svg>

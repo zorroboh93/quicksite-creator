@@ -224,7 +224,7 @@ const Index = () => {
       >
         <div className="container flex items-center justify-between py-4">
           <a href="#" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <img src="/logo.jpg" alt="PIXEL BOH Logo" className="w-10 h-10 rounded" />
+            <img src="/logo.svg" alt="PIXEL BOH Logo" className="w-10 h-10" />
             <div>
               <div className="font-semibold text-sm sm:text-base">PIXEL BOH</div>
               <div className="text-xs text-muted-foreground">Siti vetrina professionali</div>
