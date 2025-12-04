@@ -22,8 +22,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
 const WHATSAPP_NUMBER = "393401234567";
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=Ciao%20Zorro%2C%20vorrei%20un%20sito%20vetrina%20per%20la%20mia%20attivit%C3%A0`;
-const EMAIL = "ciao@zorrostudio.it";
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=Ciao%20Pixel%20Boh%2C%20vorrei%20un%20sito%20vetrina%20per%20la%20mia%20attivit%C3%A0`;
+const EMAIL = "ciao@pixelboh.it";
+const LOGO_SRC = `${import.meta.env.BASE_URL}logo.svg`;
 
 const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID ?? "";
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID ?? "";
@@ -224,11 +225,11 @@ const Index = () => {
       >
         <div className="container flex items-center justify-between py-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-primary-foreground font-bold glow-shadow">
-              Z
+            <div className="w-10 h-10 rounded-full border border-border/60 bg-background overflow-hidden flex items-center justify-center">
+              <img src={LOGO_SRC} alt="Pixel Boh logo" className="h-10 w-10 object-contain" loading="lazy" />
             </div>
             <div>
-              <div className="font-semibold text-sm sm:text-base">Zorro Web Studio</div>
+              <div className="font-semibold text-sm sm:text-base">Pixel Boh</div>
               <div className="text-xs text-muted-foreground">Siti vetrina professionali</div>
             </div>
           </div>
@@ -775,7 +776,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border mt-12 py-6">
         <div className="container flex flex-wrap items-center justify-between gap-4 text-xs text-muted-foreground">
-          <span>© {new Date().getFullYear()} Zorro Web Studio – Siti vetrina a 180€</span>
+          <span>© {new Date().getFullYear()} Pixel Boh – Siti vetrina a 180€</span>
           <nav aria-label="Link legali e contatti" className="flex flex-wrap gap-4">
             <a href={`mailto:${EMAIL}`} className="hover:text-foreground transition-colors">
               {EMAIL}

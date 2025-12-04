@@ -4,7 +4,8 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "./",
+  // Usa il nome del repo come base per servire correttamente asset e router su GitHub Pages
+  base: "/quicksite-creator/",
   build: { outDir: "docs" },
   server: {
     host: "::",

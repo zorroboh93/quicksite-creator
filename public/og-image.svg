@@ -1,30 +1,38 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zorro Web Studio - Siti vetrina moderni e veloci">
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pixel Boh - Siti vetrina moderni e veloci">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0F172A" />
-      <stop offset="50%" stop-color="#111827" />
-      <stop offset="100%" stop-color="#0B1224" />
+      <stop offset="0%" stop-color="#F6F7FB" />
+      <stop offset="100%" stop-color="#ECEFF7" />
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#60A5FA" />
-      <stop offset="100%" stop-color="#A855F7" />
+    <linearGradient id="ring" x1="160" y1="100" x2="420" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B5FE5" />
+      <stop offset="45%" stop-color="#5A4BEF" />
+      <stop offset="100%" stop-color="#FF6B3D" />
     </linearGradient>
+    <linearGradient id="inner" x1="320" y1="230" x2="400" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF5E3A" />
+      <stop offset="100%" stop-color="#FF8F2F" />
+    </linearGradient>
+    <linearGradient id="cta" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0B5FE5" />
+      <stop offset="100%" stop-color="#FF6B3D" />
+    </linearGradient>
+    <filter id="shadow" x="80" y="60" width="360" height="360" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#0B1020" flood-opacity="0.12" />
+    </filter>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)" />
-  <circle cx="200" cy="120" r="220" fill="#60A5FA" opacity="0.14" />
-  <circle cx="1050" cy="520" r="220" fill="#A855F7" opacity="0.18" />
-  <rect x="80" y="170" width="1040" height="290" rx="28" fill="rgba(15,23,42,0.65)" stroke="rgba(255,255,255,0.08)" />
-  <text x="120" y="250" fill="#8BA0C2" font-family="'Poppins', 'Inter', system-ui" font-size="32" letter-spacing="1">
-    Zorro Web Studio · Landing page professionale
-  </text>
-  <text x="120" y="320" fill="white" font-family="'Poppins', 'Inter', system-ui" font-size="56" font-weight="700">
-    Siti vetrina moderni, veloci e ottimizzati mobile
-  </text>
-  <text x="120" y="380" fill="#B8C5E3" font-family="'Poppins', 'Inter', system-ui" font-size="28">
-    Prezzo lancio 180€ · Posti limitati · Contatto rapido WhatsApp
-  </text>
-  <rect x="120" y="430" width="320" height="70" rx="18" fill="url(#accent)" />
-  <text x="160" y="476" fill="white" font-family="'Poppins', 'Inter', system-ui" font-size="28" font-weight="600">
-    Inizia il tuo sito ora
-  </text>
+  <circle cx="1040" cy="90" r="180" fill="#0B5FE5" opacity="0.07" />
+  <circle cx="150" cy="540" r="200" fill="#FF6B3D" opacity="0.08" />
+  <rect x="120" y="110" width="960" height="410" rx="32" fill="white" stroke="#E5E7EE" stroke-width="2" />
+  <g filter="url(#shadow)" transform="translate(140 100)">
+    <circle cx="160" cy="160" r="120" stroke="url(#ring)" stroke-width="26" fill="none" stroke-linecap="round" stroke-dasharray="450 150" transform="rotate(-28 160 160)" />
+    <path d="M160 160h90c0 49.705-40.295 90-90 90V160Z" fill="url(#inner)" />
+  </g>
+  <text x="420" y="230" fill="#1C2D4B" font-family="'Inter', 'Poppins', system-ui" font-size="44" font-weight="700">Pixel Boh</text>
+  <text x="420" y="280" fill="#4A556E" font-family="'Inter', 'Poppins', system-ui" font-size="28">Landing page curate e veloci a 180€</text>
+  <text x="420" y="340" fill="#1C2D4B" font-family="'Inter', 'Poppins', system-ui" font-size="32" font-weight="600">Siti vetrina ottimizzati per mobile</text>
+  <text x="420" y="386" fill="#53607B" font-family="'Inter', 'Poppins', system-ui" font-size="24">WhatsApp sempre visibile · Consegna rapida · Design su misura</text>
+  <rect x="420" y="420" width="320" height="72" rx="18" fill="url(#cta)" />
+  <text x="450" y="467" fill="white" font-family="'Inter', 'Poppins', system-ui" font-size="28" font-weight="600">Inizia il tuo sito con Pixel Boh</text>
 </svg>
